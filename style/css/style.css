@@ -1,0 +1,312 @@
+  .form {
+    width: 340px;
+    height: 440px;
+    background: #e6e6e6;
+    margin: auto;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    border-radius: 80px;
+    border-color: rgba(185, 122, 86, 1) 0%, rgba(231, 206, 206, 1) 71%, rgba(91, 224, 37, 1);
+    z-index: 2;
+  }
+
+  .FontForm {
+    height: auto;
+    background: rgb(185, 122, 86);
+    background: linear-gradient(180deg, rgba(185, 122, 86, 1) 0%, rgba(231, 206, 206, 1) 30%, rgb(54, 179, 4) 100%);
+    margin: calc(50vh - 220px) auto;
+    margin-right: 39%;
+    margin-left: 39%;
+    padding: 20px 30px;
+    max-width: calc(100vw - 40px);
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 80px;
+    border: 1px solid rgb(51, 255, 0);
+  }
+
+  .fondConnexion {
+    background-image: url("../img/fond\ site.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+  }
+
+  .fontConnecté {
+    background-image: url("../img/fondConnecté.png");
+    background-size: cover;
+  }
+
+
+  .retour {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    background-image: url('../img/flèche.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+
+
+  input {
+    width: 100%;
+  }
+
+  input:focus {
+    border-bottom: 2px solid #78788c
+  }
+
+  p:before {
+    content: attr(type);
+    display: block;
+    margin: 28px 0 0;
+    font-size: 14px;
+    color: #5a5a5a
+  }
+
+  button {
+    float: right;
+    padding: 8px 12px;
+    margin: 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #a9aba9;
+    cursor: pointer;
+    transition: all .3s
+  }
+
+  a.link {
+    text-align: right;
+    float: right;
+    color: blue;
+    text-decoration: underline;
+    font-size: small;
+  }
+
+  .Nom_identifiant {
+    text-align: center;
+    display: table;
+    font-size: 400%;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 1cm auto;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+  }
+
+  .matricule {
+    float: right;
+    display: block;
+    background-image: url('../img/compte.png');
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+
+
+  .logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .contourCalendrier {
+    border: 1px solid black;
+  }
+
+
+  calendrier {
+    position: absolute;
+    top: 60%;
+    left: 200px;
+    transform: translateY(-50%);
+  }
+
+  calendrier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  calendrier h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  calendrier table {
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  calendrier th {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  calendrier td {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  calendrier td:hover {
+    background-color: lightgrey;
+    cursor: pointer;
+  }
+
+  calendrier a {
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  calendrier a:hover {
+    background-color: #0059b3;
+  }
+
+
+  .selected {
+    background-color: rgb(137, 201, 63);
+  }
+  
+
+
+  #calendar-body .selected {
+    background-color: rgb(137, 201, 63);
+  }
+  
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+  }
+
+  .contourCalendrier {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .addJourCongés {
+    margin-top: 20%;
+    margin-left: auto;
+    position: absolute;
+    left: 350px;
+    background-color: #07b12c;
+  }
+
+
+
+  #congesBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  #selectedDays br {
+    margin-bottom: 0.5em;
+  }
+  
+  .typeCongés{
+    margin: 5%;
+    margin-top: 15%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: 200px;
+  }
+  
+  .typeCongés label {
+    display: inline-block;
+    vertical-align: auto;
+    margin-right: 10px;
+  }
+  
+  td.disabled {
+    color: #999;
+    background-color: #eee;
+    cursor: not-allowed;
+}
+
+
+#calendrier.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+
+.bar {
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.graphique{
+  margin-left: 70%;
+}
+
+
+.cloche{
+  position: absolute;
+  top: 30%;
+  right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
